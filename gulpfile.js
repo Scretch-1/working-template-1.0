@@ -26,8 +26,12 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/modernizr/modernizr.js',
+		'app/libs/jquery/jquery.min.js',
+		'app/libs/waypoints/jquery.waypoints.js',
+		'app/libs/animate/animatecss.js',
 		'app/libs/jquery-validation/dist/jquery.validate.js',
+		'app/libs/owlcarousel/owl.carousel.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

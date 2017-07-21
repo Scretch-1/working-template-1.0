@@ -1,5 +1,15 @@
 $(function() {
 
+// animatecss
+//waypoints official site http://imakewebthings.com/waypoints/
+$("section h2").animated("zoomInUp") /*Используется в качестве примера*/
+// -end  animatecss
+
+// OwlCarousel
+// documentation https://github.com/OwlCarousel2/OwlCarousel2
+$('.owl-carousel').owlCarousel();
+// -end OwlCarousel
+
 // ajax form
 // Обязательно присутствует вместе с "mail.php"
 $("form.callback").submit(function() { //Change
