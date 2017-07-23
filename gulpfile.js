@@ -30,8 +30,9 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/jquery.min.js',
 		'app/libs/waypoints/jquery.waypoints.js',
 		'app/libs/animate/animatecss.js',
-		'app/libs/jquery-validation/dist/jquery.validate.js',
+		'app/libs/form-validation/dist/jquery.validate.min.js',
 		'app/libs/owlcarousel/owl.carousel.js',
+		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
